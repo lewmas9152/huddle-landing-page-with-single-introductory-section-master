@@ -1,0 +1,87 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+body {
+    background-color: var(--Violet);
+    color: white;
+    font-size: 18px;
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display:flex;
+    place-content: center;
+    height: 100vh;
+    margin: 1rem;
+    overflow: hidden;
+    
+
+
+}
+h1 {
+    margin-bottom: 1rem;
+    
+    
+}
+ 
+.huddle {
+    margin-bottom: 5rem;
+    max-width: 40%;
+}
+.picture {
+    display:flex;
+    flex-direction: column;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    align-self: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 100%;
+    
+    
+}
+.button {
+    padding: 0.8rem;
+    border-radius: 2rem;
+    max-width: 50%;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    margin-left: 25%;
+    border: 0;
+    color: var(--Violet);
+}
+
+@media screen  and (min-width:650px){
+    body {
+        background-image: unset;
+        background-image: url(./images/bg-desktop.svg);
+    }
+    .container  {
+        flex-direction: row;
+        text-align: unset;
+        gap: 3rem;
+    }
+
+    .content {
+        margin-top: 12rem;
+    }
+
+    .button {
+        margin:0;
+        margin-top: 1rem;
+        padding:1rem 0 ;
+    }
+    
+}
